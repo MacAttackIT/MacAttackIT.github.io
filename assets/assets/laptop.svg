@@ -1,1 +1,62 @@
 
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 500 350">
+
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Screen -->
+
+<rect x="80"
+     y="40"
+     width="340"
+     height="220"
+     rx="12"
+     fill="#111827"
+     stroke="#00ff88"
+     stroke-width="4"
+     filter="url(#glow)" />
+
+  <!-- Code Lines -->
+
+<line x1="120" y1="90" x2="300" y2="90"
+     stroke="#00ff88" stroke-width="4"/>
+
+<line x1="120" y1="120" x2="260" y2="120"
+     stroke="#00ff88" stroke-width="4"/>
+
+<line x1="120" y1="150" x2="330" y2="150"
+     stroke="#00ff88" stroke-width="4"/>
+
+<line x1="120" y1="180" x2="220" y2="180"
+     stroke="#00ff88" stroke-width="4"/>
+
+  <!-- Terminal Symbol -->
+
+<text x="340"
+     y="185"
+     fill="#00ff88"
+     font-size="48"
+     font-family="monospace">
+</> </text>
+
+  <!-- Base -->
+
+<path d="
+   M40 280
+   L460 280
+   L430 315
+   L70 315
+   Z"
+   fill="#1f2937"
+   stroke="#00ff88"
+   stroke-width="3"/>
+
+</svg>
