@@ -157,7 +157,9 @@ nav a:hover {
     right: 30px;
     top: 20px;
     font-size: 2rem;
-    .workspace-plant img {
+}
+
+.workspace-plant img {
     width: 50px;
     height: auto;
     display: block;
