@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+
+  <!-- Steam -->
+
+<path d="M120 90 Q110 70 120 50"
+     fill="none"
+     stroke="#00ff88"
+     stroke-width="4"/>
+
+<path d="M150 90 Q140 70 150 50"
+     fill="none"
+     stroke="#00ff88"
+     stroke-width="4"/>
+
+<path d="M180 90 Q170 70 180 50"
+     fill="none"
+     stroke="#00ff88"
+     stroke-width="4"/>
+
+  <!-- Mug -->
+
+<rect x="80"
+     y="100"
+     width="120"
+     height="90"
+     rx="10"
+     fill="#1f2937"
+     stroke="#00ff88"
+     stroke-width="4"/>
+
+  <!-- Handle -->
+
+<path d="M200 120 Q240 120 240 145 Q240 170 200 170"
+     fill="none"
+     stroke="#00ff88"
+     stroke-width="6"/>
+
+</svg>
