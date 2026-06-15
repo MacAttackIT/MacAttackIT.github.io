@@ -144,6 +144,11 @@ nav a:hover {
     right: 35px;
     bottom: 35px;
     font-size: 2.5rem;
+    .workspace-coffee img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
 }
 
 .workspace-plant {
@@ -151,6 +156,11 @@ nav a:hover {
     right: 30px;
     top: 20px;
     font-size: 2rem;
+    .workspace-plant img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
 }
 
 .brain-heart {
