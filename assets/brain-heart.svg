@@ -1,1 +1,66 @@
 
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 400 400"
+     width="400"
+     height="400">
+
+    <defs>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="6" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Center Divider -->
+    <line x1="200" y1="80"
+          x2="200" y2="320"
+          stroke="#00ff88"
+          stroke-width="8"
+          filter="url(#glow)" />
+
+    <!-- Brain Side -->
+    <path d="
+        M180 110
+        C140 90 110 120 110 155
+        C90 165 85 200 105 220
+        C90 245 105 280 140 285
+        C150 315 190 325 200 300
+        L200 110
+    "
+    fill="none"
+    stroke="#00ff88"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)" />
+
+    <!-- Brain Circuits -->
+    <circle cx="145" cy="145" r="6" fill="#00ff88"/>
+    <circle cx="125" cy="190" r="6" fill="#00ff88"/>
+    <circle cx="150" cy="245" r="6" fill="#00ff88"/>
+
+    <line x1="145" y1="145" x2="175" y2="170"
+          stroke="#00ff88" stroke-width="4"/>
+    <line x1="125" y1="190" x2="165" y2="200"
+          stroke="#00ff88" stroke-width="4"/>
+    <line x1="150" y1="245" x2="180" y2="225"
+          stroke="#00ff88" stroke-width="4"/>
+
+    <!-- Heart Side -->
+    <path d="
+        M200 140
+        C200 90 270 85 285 140
+        C310 115 350 145 345 190
+        C340 245 285 285 200 320
+    "
+    fill="none"
+    stroke="#00ff88"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)" />
+
+</svg>
