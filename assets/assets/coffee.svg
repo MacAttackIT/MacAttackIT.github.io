@@ -1,1 +1,42 @@
 
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+
+  <path d="M110 80 C100 60 120 40 110 20"
+        fill="none"
+        stroke="#00ff88"
+        stroke-width="4"/>
+
+  <path d="M150 80 C140 60 160 40 150 20"
+        fill="none"
+        stroke="#00ff88"
+        stroke-width="4"/>
+
+  <path d="M190 80 C180 60 200 40 190 20"
+        fill="none"
+        stroke="#00ff88"
+        stroke-width="4"/>
+
+  <rect x="70"
+        y="90"
+        width="140"
+        height="110"
+        rx="10"
+        fill="#1f2937"
+        stroke="#00ff88"
+        stroke-width="4"/>
+
+  <path d="M210 115 C250 115 250 175 210 175"
+        fill="none"
+        stroke="#00ff88"
+        stroke-width="8"/>
+
+  <text x="95"
+        y="155"
+        fill="#00ff88"
+        font-size="18">
+    Coffee v1.0
+  </text>
+
+</svg>
+```
