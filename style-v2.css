@@ -153,9 +153,9 @@ nav a:hover {
 }
 .workspace-plant {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
+    top: 15px;
+    left: 1px;
+    z-index: 50;
 }
 
 .workspace-plant img {
