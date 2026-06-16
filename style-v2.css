@@ -154,7 +154,7 @@ nav a:hover {
 .workspace-plant {
     position: absolute;
     top: 15px;
-    left: 1px;
+    left: 15px;
     z-index: 50;
 }
 
