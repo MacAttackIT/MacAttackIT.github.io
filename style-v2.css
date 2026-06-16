@@ -130,7 +130,7 @@ nav a:hover {
     left: 40px;
     width: 220px;
     height: 95px;
-    background: #111827;
+    background: transparent;
     border-radius: 12px;
     color: #22c55e;
     font-size: 2rem;
