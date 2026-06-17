@@ -280,7 +280,10 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 25px;
 }
-
+.reviews-button {
+    text-align: center;
+    margin-top: 30px;
+}
 .review-card {
     background: #1f2937;
     padding: 25px;
