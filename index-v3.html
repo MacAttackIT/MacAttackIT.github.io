@@ -3,167 +3,207 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Support SaaS</title>
+<title>MacIT Support</title>
 
 <style>
+
+/* =========================
+   BASE
+========================= */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f8fafc;
-    color: #0f172a;
+    background: #0f1115;
+    color: #ffffff;
 }
 
-/* HEADER */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 40px;
-    background: rgba(255,255,255,0.9);
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-}
+/* =========================
+   HERO
+========================= */
 
-.logo {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.header-right {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
-.reviews-btn {
-    background: #22c55e;
-    color: white;
-    padding: 10px 14px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.dark-toggle {
-    padding: 10px 14px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    background: white;
-    cursor: pointer;
-}
-
-/* HERO */
 .hero {
     display: flex;
-    justify-content: space-between;
-    padding: 60px 40px;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 40px;
+    text-align: center;
 }
 
-.hero-text h1 {
-    font-size: 40px;
+.hero-content {
+    max-width: 800px;
 }
 
-.hero-text p {
-    color: #475569;
+.hero-laptop {
+    width: 280px;
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
-/* SERVICES */
-.services {
+.tagline {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #e6e6e6;
+    margin-top: 10px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.section-divider {
+    width: 80px;
+    height: 3px;
+    background: #2ecc71;
+    margin: 16px auto 30px;
+    border-radius: 2px;
+}
+
+/* =========================
+   SERVICE GRID
+========================= */
+
+.service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-    padding: 40px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .service-card {
-    background: white;
-    padding: 20px;
+    background: #1a1d24;
+    padding: 25px;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid #eee;
+    transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.service-card img {
+.service-card:hover {
+    transform: translateY(-4px);
+    background: #222632;
+}
+
+.service-icon {
     width: 48px;
-    margin-bottom: 10px;
+    height: 48px;
+    margin-bottom: 12px;
 }
 
-.footer {
-    text-align: center;
-    padding: 30px;
-    color: #64748b;
+.service-card h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #ffffff;
 }
 
-/* DARK MODE */
-body.dark {
-    background: #0b1220;
-    color: #e2e8f0;
-}
-
-body.dark .header {
-    background: rgba(15,23,42,0.9);
-    border-bottom: 1px solid #1f2937;
-}
-
-body.dark .service-card {
-    background: #111827;
-    border: 1px solid #1f2937;
-    color: #e2e8f0;
-}
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <div class="logo">Tech Support</div>
+<!-- =========================
+     HERO
+========================= -->
+<section class="hero">
 
-    <div class="header-right">
-        <button class="dark-toggle" onclick="toggleDark()">Dark Mode</button>
-        <a class="reviews-btn" href="#">Reviews</a>
-    </div>
-</div>
+    <div class="hero-content">
 
-<div class="hero">
-    <div class="hero-text">
-        <h1>Modern IT Support, Simplified</h1>
-        <p>Fast, reliable support for Mac, Windows, WiFi, security, backups and more.</p>
-    </div>
-</div>
+        <img class="hero-laptop" src="assets/laptop.png" alt="MacIT Support Laptop">
 
-<div class="services">
-    <div class="service-card">
-        <img src="assets/mac.svg">
-        <h3>Mac Support</h3>
+        <div class="tagline">
+            Precision in Code<br>
+            Passion for People
+        </div>
+
     </div>
 
-    <div class="service-card">
-        <img src="assets/windows.svg">
-        <h3>Windows Support</h3>
+</section>
+
+<!-- =========================
+     IT SUPPORT SERVICES
+========================= -->
+<section class="services">
+
+    <h2>IT Support Services</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/mac.svg" alt="Mac Support icon">
+            <h3>Mac Support</h3>
+        </div>
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/windows.svg" alt="Windows Support icon">
+            <h3>Windows Support</h3>
+        </div>
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/repair.svg" alt="Repair icon">
+            <h3>Repairs</h3>
+        </div>
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/security.svg" alt="Security icon">
+            <h3>Security</h3>
+        </div>
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/wifi.svg" alt="Networking icon">
+            <h3>Networking</h3>
+        </div>
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/office-365.svg" alt="Microsoft 365 icon">
+            <h3>Microsoft 365</h3>
+        </div>
+
     </div>
 
-    <div class="service-card">
-        <img src="assets/security.svg">
-        <h3>Security</h3>
+</section>
+
+<!-- =========================
+     SOFTWARE SUPPORT
+========================= -->
+<section class="software-support">
+
+    <h2>Software Support</h2>
+
+    <div class="section-divider"></div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/office-365.svg" alt="Microsoft 365 icon">
+            <h3>Microsoft 365</h3>
+        </div>
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/email.svg" alt="Email Support icon">
+            <h3>Email Support</h3>
+        </div>
+
+        <div class="service-card">
+            <img class="service-icon" src="assets/cloud.svg" alt="Cloud Services icon">
+            <h3>Cloud Services</h3>
+        </div>
+
     </div>
 
-    <div class="service-card">
-        <img src="assets/wifi.svg">
-        <h3>WiFi Setup</h3>
-    </div>
-</div>
-
-<div class="footer">
-    © 2026 Tech Support — Auckland
-</div>
-
-<script>
-function toggleDark() {
-    document.body.classList.toggle("dark");
-}
-</script>
+</section>
 
 </body>
 </html>
